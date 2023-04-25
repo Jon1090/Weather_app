@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="weatherapp.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <!--https://fonts.google.com/icons-->
+    <script src="weatherappnoapikey.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <fieldset>
+    <label for="zip">Zip code</label>
+    <input type="text" pattern="[0-9]{5}" required name="zip" id="zip" placeholder="12345">
+    <button id="getWeatherButton" onClick="getWeather()">Get Weather</button>
+    </fieldset>
+    <div class="hiddenUntilZipInput" id="weatherWrapper">
+        <div class="weather">
+            <div id="city"></div>
+            <div class="temp"><span id="curTemp"></span><span id="feelsLike"></span></div>
+            <div id="humidity"></div>
+            <div id="wind"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

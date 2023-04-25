@@ -1,0 +1,24 @@
+.hiddenUntilZipInput {
+    display: none;
+}
+
+input:invalid {
+    background: rgba(241, 106, 106, 0.637);
+}
+
+input:focus:invalid {
+    background: rgba(241, 136, 136, 0.671);
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    margin: 0 10px 0 0;
+}
+
+input {
+    margin: 0 10px 0 0;
+}
